@@ -1,0 +1,125 @@
+<doctype html>
+<html>
+<head>
+<script type="text/javascript">
+function validate1() 
+{ 
+	if( document.myForm.uname.value == "" ) 
+	{ 
+		alert( "Please provide your name!" ); 
+		document.myForm.uname.focus() ; 
+		return false; 
+	} 
+if( document.myForm.email.value == "" ) 
+	{ 
+		alert( "Please provide your Email!" ); 
+		document.myForm.email.focus() ; 
+		return false; 
+	} 
+		if( document.myForm.phone.value == "" ) 
+	{ 
+		alert( "Please provide your phone number!" ); 
+		document.myForm.phone.focus() ; 
+		return false; 
+	} 
+if( document.myForm.address.value == "" ) 
+	{ 
+		alert( "Please provide your address correctly!" ); 
+		document.myForm.address.focus() ; 
+		return false; 
+	} 
+	alert("Thank You For Joining Us!");
+	return true;
+	}
+</script>	
+
+<meta charset="utf-8">
+	<title>IT project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body>
+        <div class="camera">
+        <img src="image/camera.jpg" width="12%">
+        <h2>ASEK(Together we can)</h2>
+        </div>
+         
+        
+         <div class="menu">
+    	 <ul>
+    		<li><a href="index.html" class="active">HOME</a></li>
+    		<li><a href="gallery.html">GALLERY</a></li>
+		<li><a href="pricelist.html">PRICE LIST</a></li>
+    		<li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href"#">SERVICES</a></li>
+    		
+    	</ul>
+	</div>
+        <div class="joey">
+        <img src="image/giphy.gif" width="100%">
+        </div> 
+		<div class="john1">
+		<a href="image/flower.jpg">
+        <img src="image/flower.jpg" width="100%">
+		</a>
+        </div> 
+       <div class="john2">
+        <a href="image/rainbow.jpg">
+		<img src="image/rainbow.jpg" width="100%">
+       </a>
+	   </div>
+       
+       <div class="john3">
+     <a href="image/ant.jpg">
+	 <img src="image/ant.jpg" width="100%">
+	 </a>
+     </div>
+      
+     <div class="john4">
+     <a href="image/bird.jpg">
+	 <img src="image/bird.jpg" width="100%">
+	 </a>
+     </div>
+
+     <div class="john5">
+     <a href="image/cocacola.jpg">
+	 <img src="image/cocacola.jpg" width="100%" height="50%" >
+	 </a>
+     </div>
+     
+      <div class="john6">
+     <a href="image/lead.jpg">
+	 <img src="image/lead.jpg" width="100%">
+	 </a>
+     </div>
+  
+     <div class="john7">
+     <a href="image/sun.jpg">
+	 <img src="image/sun.jpg" width="100%">
+	 </a>
+     </div>
+
+   <div class="on">
+     <div class="top">
+       <div class="top1">
+         <h2>SIGN UP</h2>
+       </div>
+       <div class="top2">
+            <form action name="myForm" onsubmit="return(validate1());">
+                <p><input type="text" placeholder="Name" size="80" name="uname"></p>
+                <p><input type="text" placeholder="Email" size="80" name="email"></p>
+                <p><input type="text" placeholder="Phone number" name="phone" size="80"></p>
+                <p><input type="text" placeholder="Address" size="80" name="address"></p>        
+            
+       </div>
+      <div class="top3">
+         <p><button class="mybutton" name="submit">Submit &raquo;</button></p>
+      </div>
+	  </form>
+      
+     </div>
+     
+</body>
+</html>

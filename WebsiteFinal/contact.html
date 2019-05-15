@@ -1,0 +1,116 @@
+<doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>IT project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript"> 
+function validate() 
+{ 
+	if( document.mylogin.Name.value == "" ) 
+	{ 
+		alert( "Please provide your name!" ); 
+		document.mylogin.Name.focus() ; 
+		return false; 
+	} 
+if( document.mylogin.Email.value == "" ) 
+	{ 
+		alert( "Please provide your Email!" ); 
+		document.mylogin.Email.focus() ; 
+		return false; 
+	} 
+	alert("Your application is submitted");
+	return true;
+	}
+</script>	
+<script type="text/javascript">
+function validate1() 
+{ 
+	if( document.myForm.uname.value == "" ) 
+	{ 
+		alert( "Please provide your name!" ); 
+		document.myForm.uname.focus() ; 
+		return false; 
+	} 
+if( document.myForm.email.value == "" ) 
+	{ 
+		alert( "Please provide your Email!" ); 
+		document.myForm.email.focus() ; 
+		return false; 
+	} 
+		if( document.myForm.phone.value == "" ) 
+	{ 
+		alert( "Please provide your phone number!" ); 
+		document.myForm.phone.focus() ; 
+		return false; 
+	} 
+if( document.myForm.address.value == "" ) 
+	{ 
+		alert( "Please provide your address correctly!" ); 
+		document.myForm.address.focus() ; 
+		return false; 
+	} 
+	alert("Thank You For Joining Us!");
+	return true;
+	}
+</script>	
+</head>
+
+<body>
+        <div class="camera">
+        <img src="image/camera.jpg" width="12%">
+        <h2>ASEK(Together we can)</h2>
+        </div>
+        
+         <div class="menu">
+    	 <ul>
+    		<li><a href="index.html" class="active">HOME</a></li>
+    		<li><a href="gallery.html">GALLERY</a></li>
+		<li><a href="pricelist.html">PRICE LIST</a></li>
+    		<li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href"#">SERVICES</a></li>
+    		
+    	</ul>
+	</div> 
+        <iframe src="https://www.google.com.np/maps/place/Sunrise+Digital+Photo+Studio/@27.7125219,85.3005844,
+14z/data=!4m8!1m2!2m1!1sdigital+photo+studio+pepsicola!3m4!1s0x39eb198ccbaede9f:0x2c676fb344d4bd31!8m2!3d27.6831613!4d85.3483167"width="100%" height="300"
+ frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="khar">
+      <p>Interested one can fill up the form. Salary is negotiable.</p>
+      </div>
+      
+<form action name="mylogin" onsubmit="return(validate());"> 
+<table cellspacing="2" cellpadding="2" border="1"> 
+<tr>
+<td align="center">Name</td> 
+<td><input type="text" name="Name" /></td> 
+</tr>
+<tr> 
+<td align="center">EMail</td> 
+<td><input type="text" name="Email" /></td> 
+</tr> 
+</table>
+<p><button class="mybutton" name="submit">Submit &raquo;</button></p>
+</form> 
+<div class="on">
+     <div class="top">
+       <div class="top1">
+         <h2>SIGN UP</h2>
+       </div>
+      <div class="top2">
+            <form action name="myForm" onsubmit="return(validate1());">
+                <p><input type="text" placeholder="Name" size="80" name="uname"></p>
+                <p><input type="text" placeholder="Email" size="80" name="email"></p>
+                <p><input type="text" placeholder="Phone number" name="phone" size="80"></p>
+                <p><input type="text" placeholder="Address" size="80" name="address"></p>        
+            
+       </div>
+      <div class="top3">
+         <p><button class="mybutton" name="submit">Submit &raquo;</button></p>
+      </div>
+	  </form>
+      </div>
+     </div>  
+</body>
+</html>

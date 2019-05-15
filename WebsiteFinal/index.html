@@ -1,0 +1,140 @@
+﻿<doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>IT project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+function validate1() 
+{ 
+	if( document.myForm.uname.value == "" ) 
+	{ 
+		alert( "Please provide your name!" ); 
+		document.myForm.uname.focus() ; 
+		return false; 
+	} 
+if( document.myForm.email.value == "" ) 
+	{ 
+		alert( "Please provide your Email!" ); 
+		document.myForm.email.focus() ; 
+		return false; 
+	} 
+		if( document.myForm.phone.value == "" ) 
+	{ 
+		alert( "Please provide your phone number!" ); 
+		document.myForm.phone.focus() ; 
+		return false; 
+	} 
+if( document.myForm.address.value == "" ) 
+	{ 
+		alert( "Please provide your address correctly!" ); 
+		document.myForm.address.focus() ; 
+		return false; 
+	} 
+	alert("Thank You For Joining Us!");
+	return true;
+	}
+</script>	
+
+</head>
+
+<body>
+        <div class="camera">
+        <img src="image/camera.jpg" width="12%">
+        <h2>ASEK(Together we can)</h2>
+        </div>
+        
+        <div class="menu">
+    	 <ul>
+    		<li><a href="index.html" class="active">HOME</a></li>
+    		<li><a href="gallery.html">GALLERY</a></li>
+		<li><a href="pricelist.html">PRICE LIST</a></li>
+    		<li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href"#">SERVICES</a></li>
+    		
+    	</ul
+		<div class="slide45">
+  <img class="mySlides" src="image/came.jpg">
+        <img class="mySlides" src="image/anu.jpg">
+        <img class="mySlides" src="image/feather.jpg">
+        <img class="mySlides" src="image/squirrel.jpg">
+</div>
+	<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+	</div> 
+       <div class="jan">
+       <h3>Duties</h3>
+Photographers typically do the following:
+<ul>
+<li>Market and advertise services to attract clients.</li>
+<li>Analyze and decide how to compose a subject</li>
+<li>Use various photographic techniques and equipment</li>
+<li>Capture subjects in commercial-quality photographs</li>
+<li>Enhance the subject’s appearance with natural or artificial light</li>
+<li>Use photo enhancing software</li>
+<li>Maintain a digital portfolio, often on a website, to demonstrate work</li>
+</ul>
+<p>Today, most photographers use digital cameras instead of the traditional silver-halide film cameras. Digital cameras capture images electronically, so the photographer can edit the image on a computer. Images can be stored on portable memory devices, such as compact disks, memory cards, and flash drives. Once the raw image has been transferred to a computer, photographers can use processing software to crop or modify the image and enhance it through color correction and other specialized effects. Photographers who edit their own pictures use computers, high-quality printers, and editing software. For information on workers who specialize in developing and processing photographic images from film or digital media, see photographic process workers and processing machine operators included in occupations not covered in detail.
+
+Photographers who work for commercial clients will often present finalized photographs in a digital format to the client. However, wedding and portrait photographers, who primarily serve noncommercial clients, often also provide framing services and present the photographs they capture in albums.
+
+Many wedding and portrait photographers are self-employed. Photographers who own and operate their own business have additional responsibilities. They must advertise, schedule appointments, set and adjust equipment, purchase supplies, keep records, bill customers, pay bills, and—if they have employees—hire, train, and direct their workers.
+
+In addition, some photographers teach photography classes or conduct workshops in schools or in their own studios.
+
+The following are examples of types of photographers:
+
+Portrait photographers take pictures of individuals or groups of people and usually work in their own studios. Photographers who specialize in weddings, religious ceremonies, or school photographs may work on location.
+
+Commercial and industrial photographers take pictures of various subjects, such as buildings, models, merchandise, artifacts, and landscapes. These photographs are used for a variety of purposes, including magazine covers and images to supplement analysis of engineering projects. These photographs are frequently taken on location.
+
+Aerial photographers use planes or helicopters to capture photographs of buildings and landscapes. They often use gyrostabilizers to counteract the movement of the aircraft and ensure high-quality images.
+
+Scientific photographers focus on the accurate visual representation of subjects and limit the use of image manipulation software for clarifying an image. Scientific photographs record scientific or medical data or phenomena. Scientific photographers typically use microscopes to photograph subjects.
+
+News photographers, also called photojournalists, photograph people, places, and events for newspapers, journals, magazines, or television. In addition to taking still photos, photojournalists often work with digital video.
+
+Fine arts photographers sell their photographs as artwork. In addition to technical knowledge, such as lighting and use of lenses, fine arts photographers need artistic talent and creativity. Most use traditional silver-halide film instead of digital cameras.
+
+University photographers serve as general photographers for academic institutions. They may be required to take portraits, document an event, or take photographs for press releases. University photographers are found primarily in larger academic institutions, because smaller institutions often contract with freelancers to do their photography work.</p>
+</div>
+
+       <div class="john">
+     <img src="image/clicks.jpg" width="100%">
+     </div>
+   <div class="on">
+     <div class="top">
+       <div class="top1">
+         <h2>SIGN UP</h2>
+       </div>
+       <div class="top2">
+            <form action name="myForm" onsubmit="return(validate1());">
+                <p><input type="text" placeholder="Name" size="80" name="uname"></p>
+                <p><input type="text" placeholder="Email" size="80" name="email"></p>
+                <p><input type="text" placeholder="Phone number" name="phone" size="80"></p>
+                <p><input type="text" placeholder="Address" size="80" name="address"></p>        
+            
+       </div>
+      <div class="top3">
+         <p><button class="mybutton" name="submit">Submit &raquo;</button></p>
+      </div>
+	  </form>
+           </div>
+     
+</body>
+</html>

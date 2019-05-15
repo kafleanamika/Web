@@ -1,0 +1,33 @@
+.ssss2{
+  float:right;
+  margin-right:10%;
+  width:10%;
+}
+.menu ul li{
+   list-style-type:none;
+}
+.menu ul li a{
+   text-decoration:none;
+   color:#000;
+   padding:20px 60px;
+   float:left;
+   margin-top:-4%;
+   margin-left:5%;
+}
+.joe{
+   margin-top:20%;
+}
+.joe1{
+   float:left;
+   margin-right:50%;
+   margin-left:5%;
+}
+.joe2{
+   float:right;
+   margin-left:70%;
+   margin-top:-17%;
+}
+.moni{
+   margin-top:15%;
+   margin-left:5%;
+}

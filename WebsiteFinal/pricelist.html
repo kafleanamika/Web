@@ -1,0 +1,126 @@
+﻿<doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>IT project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+function validate1() 
+{ 
+	if( document.myForm.uname.value == "" ) 
+	{ 
+		alert( "Please provide your name!" ); 
+		document.myForm.uname.focus() ; 
+		return false; 
+	} 
+if( document.myForm.email.value == "" ) 
+	{ 
+		alert( "Please provide your Email!" ); 
+		document.myForm.email.focus() ; 
+		return false; 
+	} 
+		if( document.myForm.phone.value == "" ) 
+	{ 
+		alert( "Please provide your phone number!" ); 
+		document.myForm.phone.focus() ; 
+		return false; 
+	} 
+if( document.myForm.address.value == "" ) 
+	{ 
+		alert( "Please provide your address correctly!" ); 
+		document.myForm.address.focus() ; 
+		return false; 
+	} 
+	alert("Thank You For Joining Us!");
+	return true;
+	}
+</script>	
+
+</head>
+
+<body>
+        <div class="camera">
+        <img src="image/camera.jpg" width="12%">
+        <h2>ASEK(Together we can)</h2>
+        </div>
+        
+         <div class="menu">
+    	 <ul>
+    		<li><a href="index.html" class="active">HOME</a></li>
+    		<li><a href="gallery.html">GALLERY</a></li>
+		<li><a href="pricelist.html">PRICE LIST</a></li>
+    		<li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+    		<li><a href"#">SERVICES</a></li>
+    	</ul>
+	</div> 
+   <div class=aaku">
+   <div class="aaku1">
+   <p>It’s incredibly difficult to advice how much you should charge for a photo. A newspaper looking for an exclusive might have very deep pockets indeed, for example, while the proud dog owner would expect to pay a lot less for a photo of their life companion. An idyllic photo of a house in the mountains could be worth quite a bit of money if, say, IKEA decide to buy a licence of it, in order to make huge prints of it and sell it in their stores world-wide, but the same photo would only fetch very little if the owner of the house was your dad, who wanted a photo of his holiday home.
+
+   </p>
+   <p>How much you charge for a photo depends on a lot of factors — but if you under-charge, it harms all photographers in the long run…</p>
+   <p>The pricing world gets even more muddled when you include the world of Micro stock photography — companies like iStockPhoto, which charge only a minuscule amount of money per photo ($1-$10), but rely on the vast quantities they sell of each photo to recoup their costs and run at a profit. Other stock agencies could charge $90-$400 for the exact same image, and they might have other advantages, such as better customer service, assistance with image research, and other perks.</p>
+   <p>When working on commission for newspapers or magazines, it is worth looking up the freelance rates set by an industry body. For the UK, this list is maintained by the London branch of the National Union of Journalists — check it out here — but be aware that the figures listed are often quite unrealistic. A small magazine or local newspaper will tell you to go do something anatomically impossible if you demand the full NUJ rates. The problem is that with the advent of digital photography, there is no shortage of people who want to do the work, and since equipment is relatively cheap nowadays, the prices are driven down.</p>
+   <p>When working with people directly — when you are doing portrait photography or events like weddings, for example — the pricing structure changes yet again, and you have to be a little bit careful about what you charge. People expect to play close to £1,000 to have a wedding photographed, but personally, I only do weddings for close friends, and part of my wedding present to them becomes my photos, so I only charge a fraction of that (usually just to cover my travel expenses).</p>
+   <p>In summary, the same sentence that opened this write-up: Your photo is worth what someone is prepared to pay for it. If you really aren’t sure, try asking them what they would expect to pay for a photo they need taking. Be aware, however, if they say $20, and you then say $400, you might just have insulted them.</p>
+   </div>
+   </div>
+   <div class="manas">
+   <div class="manas1">
+    <table style="width:100%" border="1">
+	<tr>
+		<th width="33.33%">S.N.</th>
+		<th width="33.33%">Types of photographs</th> 
+		<th width="33.33%">Rate per photographs</th>
+                <th width="33.33%">Rate per videography</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>Wedding</td> 
+		<td>15000</td>
+                <td>10000</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Birthday</td> 
+		<td>5000</td>
+                <td>3000</td>
+	</tr>
+        <tr>
+		<td>3</td>
+		<td>Rice feeding ceremory</td> 
+		<td>8000</td>
+                <td>5000</td>
+	</tr>
+        <tr>
+		<td>4</td>
+		<td>Model photoshoots</td> 
+		<td>6000</td>
+                <td>4000</td>
+	</tr>
+
+        </table>
+        </div>
+        </div>
+        <div class="on">
+     <div class="top">
+       <div class="top1">
+         <h2>SIGN UP</h2>
+       </div>
+       <div class="top2">
+            <form action name="myForm" onsubmit="return(validate1());">
+                <p><input type="text" placeholder="Name" size="80" name="uname"></p>
+                <p><input type="text" placeholder="Email" size="80" name="email"></p>
+                <p><input type="text" placeholder="Phone number" name="phone" size="80"></p>
+                <p><input type="text" placeholder="Address" size="80" name="address"></p>        
+            
+       </div>
+      <div class="top3">
+         <p><button class="mybutton" name="submit">Submit &raquo;</button></p>
+      </div>
+	  </form>
+      
+     </div>
+     </body>
+     </html>

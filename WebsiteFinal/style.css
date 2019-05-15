@@ -1,0 +1,167 @@
+*{
+	box-sizing:border-box;
+}
+.menu{
+	width:80%;
+	float:left;
+	margin-left:150px;
+   	margin-top:15px;
+	margin-bottom:20px;
+        
+	
+}
+
+.menu ul li{
+	list-style-type:none;
+	
+}
+
+.menu ul li a{
+	text-decoration:none;
+	color:#000;
+	float:left;
+	padding:10px 20px;
+	
+	
+}
+.menu ul li a active{
+	border-radius:10px;
+	background:#000;
+	color:#fff;
+	height:10px;
+	
+}
+
+.camera{
+      margin-left:50px;
+}
+.joey{
+      margin-left:150px;
+	  width:38%;
+      
+}
+.john1{
+position:absolute;
+      top:40%;
+	  left:55%;
+	  width:38%;
+}
+
+.john2{
+margin-top:20px;
+     margin-left:150px;
+	  width:38%;
+}
+.john3{
+      position:absolute;
+      top:94%;
+	  left:55%;
+	  width:40%;
+}
+.john4{
+      margin-left:150px;
+      margin-top:20px;
+	  width:38%;
+}
+.john5{
+      position:absolute;
+      top:154%;
+	  left:55%;
+      width:38%;
+}
+.john6{
+      margin-left:150px;
+      margin-top:20px;
+	  width:38%;
+}
+.john7{
+ position:absolute;
+      top:206%;
+	  left:55%;
+	  width:38%;
+}
+.on{
+	background:#373737;
+	height:330px;
+	margin-top:3%;
+}
+.top{
+	width:30%;
+	float:left;
+	margin-top:3%;
+	margin-left:10%;
+}
+.top2{
+	margin-top:3%;
+}
+.mak{
+      float:left;
+      margin-left:30px;
+      display: flex;
+      flex-direction: column;
+      background-color: DodgerBlue;
+}
+.mak1{
+      float:left;
+      margin-left:30px;
+      display: flex;
+      flex-direction: column;
+      background-color: DodgerBlue;
+}
+.mak2{
+      float:left;
+      margin-left:30px;
+      display: flex;
+      flex-direction: column;
+      background-color: DodgerBlue;
+}
+.mak3{
+      float:left;
+      margin-left:30px;
+      display: flex;
+      flex-direction: column;
+      background-color: DodgerBlue;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 50px 100px;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.aaku{
+     float:left;
+}
+.aaku1{
+     float:left;
+     }
+.jan{
+     margin-left:50px;
+     margin-right:50px;
+}
+
+
+	.mySlides
+	{
+		position:relative;
+		height:450px;
+		width:960px;
+		z-index:1;
+		padding:0 0 0 0;
+	}
+.mySlide
+	{
+		position:relative;
+		height:200px;
+		width:1000px;
+		z-index:1;
+		padding:10 0 0 120px;
+	}	

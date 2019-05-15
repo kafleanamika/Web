@@ -1,0 +1,128 @@
+﻿<doctype html>
+<html>
+<head>
+<script type="text/javascript">
+function validate1() 
+{ 
+	if( document.myForm.uname.value == "" ) 
+	{ 
+		alert( "Please provide your name!" ); 
+		document.myForm.uname.focus() ; 
+		return false; 
+	} 
+if( document.myForm.email.value == "" ) 
+	{ 
+		alert( "Please provide your Email!" ); 
+		document.myForm.email.focus() ; 
+		return false; 
+	} 
+		if( document.myForm.phone.value == "" ) 
+	{ 
+		alert( "Please provide your phone number!" ); 
+		document.myForm.phone.focus() ; 
+		return false; 
+	} 
+if( document.myForm.address.value == "" ) 
+	{ 
+		alert( "Please provide your address correctly!" ); 
+		document.myForm.address.focus() ; 
+		return false; 
+	} 
+	alert("Thank You For Joining Us!");
+	return true;
+	}
+</script>	
+
+<meta charset="utf-8">
+	<title>IT project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body>
+        <div class="camera">
+        <img src="image/camera.jpg" width="12%">
+        <h2>ASEK(Together we can)</h2>
+        </div>
+        
+         <div class="menu">
+    	 <ul>
+    		<li><a href="index.html" class="active">HOME</a></li>
+    		<li><a href="gallery.html">GALLERY</a></li>
+		<li><a href="pricelist.html">PRICE LIST</a></li>
+    		<li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+    		<li><a href"#">SERVICES</a></li>
+    	</ul>
+	</div> 
+       <div class="mak">
+       <p>"With a love of all things digital, we create experiences and destinations that help brands nurture and grow their communities, and enable them to connect with their audience.”
+       </p>
+       </div>
+       <div class="mak1">
+       <p>ASEK(Together we can)is a client focused digital agency with focus on web, eCommerce, apps and online marketing. With the philosophy of providing creative design and first class, professional service at a realistic price, we have assembled an impressive array of clients since commencing business in 2016.</p>
+       </div>
+       <div class="mak2">
+       <p>When you work with us, you’ll be working with some of the brightest people in the industry – people who are always pushing themselves and learning new skills. Our approach to each project is the same: we listen carefully, ask the right questions and don’t ask them twice. Then we sit down and think hard about the answers before we do anything else, may be get a coffee first though.
+
+      </p>
+       </div>
+       <div class="mak3">
+       <p>Providing a dedicated eye for detail and a focus on quality, while maintaining a level of customer service and impartial advice second to none,  Digital exists to benefit your company’s bottom line. We provide a highly professional set of creative digital solutions to sell more of your organisation’s services, to increase your business revenues, customer base and long term profits, all in a straight-forward and cost effective manner.
+
+</p>
+       </div>
+      
+      <div class="grid-container">
+       <div class="grid-item">
+       <img src="image/water.jpg">
+       </div>
+      </div>
+
+
+     <div class="slide46">
+  <img class="mySlide" src="image/banner1.jpg">
+        <img class="mySlide" src="image/banner2.jpg">
+        <img class="mySlide" src="image/banner3.jpg">
+        <img class="mySlide" src="image/banner4.jpg">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlide");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+     <div class="on">
+     <div class="top">
+       <div class="top1">
+         <h2>SIGN UP</h2>
+       </div>
+      <div class="top2">
+            <form action name="myForm" onsubmit="return(validate1());">
+                <p><input type="text" placeholder="Name" size="80" name="uname"></p>
+                <p><input type="text" placeholder="Email" size="80" name="email"></p>
+                <p><input type="text" placeholder="Phone number" name="phone" size="80"></p>
+                <p><input type="text" placeholder="Address" size="80" name="address"></p>        
+            
+       </div>
+      <div class="top3">
+         <p><button class="mybutton" name="submit">Submit &raquo;</button></p>
+      </div>
+	  </form>
+</div>
+  
+
+       
+     
+</body>
+</html>
